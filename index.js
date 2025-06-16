@@ -37,7 +37,7 @@ app.listen(port, () => {
   console.log('\x1b[36m[ SERVER ]\x1b[0m', '\x1b[32m SH : http://localhost:' + port + ' ✅\x1b[0m');
 });
 
-const statusMessages = ["EDIT THE STATUS", "🎮 Playing VALORANT"];
+const statusMessages = ["yo wsg it's Sanctum!bot","Sanctum ON TOP 🔥","Made with ❤️ by Meowinc","tbh this server fire rn 🔥","I love you all <3"];
 let currentIndex = 0;
 
 async function login() {
@@ -65,7 +65,7 @@ function updateStatus() {
 function heartbeat() {
   setInterval(() => {
     console.log('\x1b[35m[ HEARTBEAT ]\x1b[0m', `Bot is alive at ${new Date().toLocaleTimeString()}`);
-  }, 30000);
+  }, 3000);
 }
 
 client.once('ready', () => {
